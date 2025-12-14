@@ -108,14 +108,14 @@ body {
  }
 
   
-/*   @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
 	::-webkit-scrollbar-track {
 	  background: rgba(3, 0, 20, 0.6);
 	}
   } */
 
 
-/* 
+
   .container {
 	width: 100%;
 	height: 100%;
@@ -184,4 +184,17 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	cursor: default;
-  } */
+  }
+
+ /* Animasi floating saat hover */
+@keyframes floatHover {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-10px) scale(1.08); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+.hover-float:hover {
+  animation: floatHover 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 18px #a855f7);
+  transform: scale(1.1);
+}

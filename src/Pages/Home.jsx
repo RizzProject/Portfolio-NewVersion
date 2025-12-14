@@ -4,6 +4,8 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+
+
 // Memoized Components
 const StatusBadge = memo(() => (
   <div className="inline-block animate-float lg:mx-0" data-aos="zoom-in" data-aos-delay="400">
@@ -25,7 +27,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Frontend
+          Backend
         </span>
       </span>
       <br />
@@ -80,9 +82,9 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/EkiZR" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr._/?hl=id" }
+  { icon: Github, link: "https://github.com/rizzproject" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/muhammad-rizki-saputra-70b676330/" },
+  { icon: Instagram, link: "https://www.instagram.com/kaiiriz._/?hl=id" }
 ];
 
 const Home = () => {
@@ -220,11 +222,15 @@ const Home = () => {
                 }`}>
                 </div>
 
-                <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${
-                  isHovering ? "scale-105" : "scale-100"
-                }`}>
-                  <DotLottieReact {...lottieOptions} />
-                </div>
+                
+               <div className="flex justify-end">
+                  <img
+                      src="/Coding.gif"
+                      alt="Developer GIF"
+                      className="w-[420px] h-auto rounded-xl shadow-xl transition-transform duration-300 ease-in-out hover-float"
+                      style={{ filter: "drop-shadow(0px 0px 12px #a855f7)" }}
+                      />
+                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${
                   isHovering ? "opacity-50" : "opacity-20"
